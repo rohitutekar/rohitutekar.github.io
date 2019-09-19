@@ -174,7 +174,7 @@ self.addEventListener("fetch", function(event) {
           /* Here we're creating a response programmatically. The first parameter is the
              response body, and the second one defines the options for the response.
           */
-          return new Response('offline.html', {
+          return new Response('<h1>You are offline</h1>', {
             status: 503,
             statusText: 'Service Unavailable',
             headers: new Headers({
